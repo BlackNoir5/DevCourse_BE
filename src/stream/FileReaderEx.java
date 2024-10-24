@@ -3,7 +3,7 @@ package stream;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class IO2Ex {
+public class FileReaderEx {
     public static void main(String[] args) {
         FileReader fr = null;
 

@@ -2,7 +2,7 @@ package stream;
 
 import java.io.*;
 
-public class IOEx {
+public class BufferedStrmEx {
     public static void main(String[] args) {
         //파일 내용 복사
         BufferedInputStream bis = null;

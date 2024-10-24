@@ -3,7 +3,7 @@ package stream;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class IO3Ex {
+public class FileWriterEx {
     public static void main(String[] args) {
         FileWriter fw = null;
 

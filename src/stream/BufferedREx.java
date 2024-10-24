@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class IO4Ex {
+public class BufferedREx {
     public static void main(String[] args) {
         BufferedReader br = null;
 //      FileReader fr = null;

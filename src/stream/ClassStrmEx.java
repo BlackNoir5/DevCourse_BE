@@ -1,0 +1,24 @@
+package stream;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class ClassStrmEx {
+    public static void main(String[] args) {
+        Person p = new Person ("홍길동","010-1111-1111",20,"서울시");
+
+        ObjectOutputStream oos = null;
+
+        try {
+            oos = new ObjectOutputStream(new FileOutputStream("./serial.dat"));
+            oos.writeObject(p);
+
+            System.out.println("출력완료");
+        } catch ( IOException e){
+            System.out.println( e.getMessage() );
+        } finally {
+            if( oos != null ) { try { oos.close(); } catch ( IOException e ) { } }
+        }
+    }
+}
